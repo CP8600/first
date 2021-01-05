@@ -1,28 +1,27 @@
 let git = document.getElementById('git')
 let ol = document.getElementById('ol')
 let li = document.getElementById('li')
+let firstName = document.getElementById('firstName')
+let names = document.getElementById('name')
+
 
 const addText = 'World from '
 
-let firstName = document.getElementById('firstName')
+let name = prompt('Whats your name?,  " " ')
+let bg = document.getElementById('body')
 
-let y = firstName.innerHTML
-
-let x = document.getElementById('name')
-
-
+const gitThis2 = () => {
+ 
 
 
-
-const gitThis = () => {
-
-  li.innerHTML = 'Hello ' + addText
-
-
+bg.style.backgroundColor='red'
+bg.style.fontSize='2em'
+bg.style.color='white'
+bg.style.margin='10px'
 }
 
+li.innerHTML = 'Hello ' + addText + name
 
-gitThis()
-
-console.log(firstName)
+console.log(li.innerHTML)
+console.log(firstName.value)
 
