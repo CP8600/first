@@ -1,0 +1,12 @@
+body {
+    margin: auto;
+    text-align: center;
+    list-style-type: none;
+    font-size: 3em;
+
+}
+
+li {
+  
+    list-style-type: none;
+}

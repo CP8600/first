@@ -11,10 +11,6 @@ let name = prompt('Whats your name?  ')
 let bg = document.getElementById('body')
 const gitThis2 = () => {
 
-    bg.style.backgroundColor = 'red'
-    bg.style.fontSize = '2em'
-    bg.style.color = 'white'
-    bg.style.margin = '10px'
 }
 
 
@@ -27,7 +23,7 @@ for (i = 0; i < chooseColor.length; i++) {
 } */
 const setBg = () => {
     const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-    document.body.style.backgroundColor = "#" + randomColor;
+    document.body.style.backgroundColor = "#" + randomColor; /* thanks to css-tricks for the random color generator code!*/
     color.innerHTML = "#" + randomColor;
 }
 
